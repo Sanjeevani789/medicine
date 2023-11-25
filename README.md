@@ -46,4 +46,4 @@ Run the application using a local server or open the index.html file in your bro
 4 Submit a pull request.
 # License
 This project is licensed under the MIT License.
-  ## Live Project link:  
+  ## Live Project link:  https://sanjeevani789.github.io/medicine/
