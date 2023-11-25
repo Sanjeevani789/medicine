@@ -1,0 +1,38 @@
+html code:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Alarm App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="reminderSound" src="music.mp3" preload="auto"></audio>
+
+    <div class="container">
+        <h1>Medicine Alarm App</h1>
+
+        <form id="medicineForm">
+            <label for="medicineName">Medicine Name:</label>
+            <input type="text" id="medicineName" required>
+
+            <label for="medicineTime">Time:</label>
+            <input type="time" id="medicineTime" required>
+
+            <label for="recurring">Recurring:</label>
+            <input type="checkbox" id="recurring" name="recurring">
+
+            <button type="button" onclick="addMedicine()">Add Reminder</button>
+        </form>
+
+        <div id="upcomingReminders">
+            <h2>Upcoming Reminders</h2>
+            <ul id="reminderList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
